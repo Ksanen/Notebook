@@ -26,19 +26,19 @@ class DataManager {
     static defaultLanguageDataForAnnouncements() {
         return {
             announcements: {
-                noteIsSaved: "Note saved",
-                BinEmptied: "The bin has been emptied",
-                CategoryExists: "A category with this name already exists",
-                CategoryRenamed: "Category name has been changed",
-                NoteDeleted: "Note has been deleted",
-                noteRestored: "Note has been restored",
-                restoredAllNotes: "All notes has been restored",
-                categoryChanged: "Category has been changed",
-                categoryDeletedFromNote: "Category has been removed from the note",
-                noCategoryToChoose: "No category to choose",
-                dataLoaded: "Data loaded",
-                parsingError: "Parsing error",
-                unableToLoad: "Unable to load",
+                noteIsSaved: "Zapisano notatkę",
+                BinEmptied: "Kosz został opróżniony",
+                CategoryExists: "Kategoria z tą nazwą istnieje",
+                CategoryRenamed: "Nazwa kategorii została zmieniona",
+                NoteDeleted: "Notatka została usunięta",
+                noteRestored: "Notatka została przywrócona",
+                restoredAllNotes: "Wszystkie notatki zostały przywrócone",
+                categoryChanged: "Kategoria została zmieniona",
+                categoryDeletedFromNote: "Kategoria została usunięta z notatki",
+                noCategoryToChoose: "Brak kategorii do wybrania",
+                dataLoaded: "Wczytano dane",
+                parsingError: "Błąd parsowania",
+                unableToLoad: "Nie udało się wczytać"
             }
         };
     }
