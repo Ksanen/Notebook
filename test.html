@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="file" value="import" id="import" accept=".txt" id="file">
+    <a id="link"><input type="button" value="eksport" id="eksport"></a>
+    <script>
+        let importButton = document.getElementById("import");
+        let exportButton = document.getElementById("eksport");
+        let link = document.getElementById("link");
+
+        let data = "cos cos cos"
+        const blob = new Blob([data], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        console.log(url);
+
+        link.href = url;
+        link.download = "toDowload.txt";
+
+        const file = document.getElementById
+        file.addEventListener("change", () => {
+            console.log(file.value);
+        })
+
+    </script>
+
+</body>
+
+</html>
