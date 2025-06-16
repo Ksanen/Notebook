@@ -781,7 +781,7 @@ class EventManager {
         */
         notes = notes.filter((note) => {
             const title = note.title.toLowerCase();
-            const phrase = this.notebook.MESSAGES.text.withoutTitle.toLowerCase();
+            const phrase = this.notebook.languageData ? this.notebook.MESSAGES.text.withoutTitle.toLowerCase() : "bez tytułu";
             if (note.title === "") {
                 if (phrase.search(value) > -1) {
                     return true;
