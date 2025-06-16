@@ -1023,7 +1023,7 @@ class EventManager {
                 const blob = new Blob([data], { type: "text/plain" });
                 const url = URL.createObjectURL(blob);
                 exportData.href = url;
-                exportData.download = "Notebook.txt";
+                exportData.download = "Notebook.json"; // byś se chociaż poprawny format plików dał we we
                 break;
         }
     }
