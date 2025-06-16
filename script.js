@@ -438,13 +438,15 @@ class UIManager {
         page.innerHTML = "";
         notes.forEach((note) => {
             let text = note.category;
-            let title = note.title === "" ? `${this.notebook.MESSAGES.text.withoutTitle}` : note.title;
+            let withoutTitle = this.notebook.languageData ? this.notebook.MESSAGES.text.withoutTitle : "bez tytułu";
+            let title = note.title === "" ? `${withoutTitle}` : note.title;
+            let lastSave = this.notebook.languageData ? this.notebook.MESSAGES.text.lastSave : "Ostatni zapis";
             let noteHTML = `            <section class="note" tabindex="0">
                     <input note-id=${note.id} type="hidden">
                     <h1>${title}</h1>
                     <div class="note-information">
                         <p class="note-information-category">${text}</p>
-                        <p class="note-information-data">${this.notebook.MESSAGES.text.lastSave}: ${note.lastEdited.day}.${note.lastEdited.month}.${note.lastEdited.year},${note.lastEdited.hour}.${note.lastEdited.minute}</p>
+                        <p class="note-information-data">${lastSave}: ${note.lastEdited.day}.${note.lastEdited.month}.${note.lastEdited.year},${note.lastEdited.hour}.${note.lastEdited.minute}</p>
                     </div>
             </section>`;
             page.innerHTML += noteHTML;
@@ -664,6 +666,8 @@ class EventManager {
             element.addEventListener("click", () => {
                 this.notebook.UIManager.changePage('note');
                 this.notebook.UIManager.note.createNote(this.notebook.currentCategory);
+                DataManager.saveApplicationData(this.data);
+                this.notebook.UIManager.note.loadNote();
             })
             element.addEventListener("keydown", (e) => {
                 if (e.key === "Enter") {
@@ -935,9 +939,9 @@ class EventManager {
                 break;
             case "deleteNote":
                 this.notebook.UIManager.note.moveNoteToBin();
+                DataManager.saveApplicationData(this.data);
                 this.notebook.UIManager.changePage("main");
                 this.data.currentNoteId = -1;
-                DataManager.saveApplicationData(this.data);
                 this.notebook.UIManager.showPopUpInformation(this.notebook.MESSAGES.announcements.NoteDeleted);
                 this.notebook.UIManager.reloadFragmentOfThePage("notes");
                 this.notebook.UIManager.hideOptions();
@@ -982,10 +986,12 @@ class EventManager {
                     switch (noteOption.value) {
                         case "restore":
                             this.notebook.UIManager.note.restoreDeletedNote();
+                            DataManager.saveApplicationData(this.data);
                             this.notebook.UIManager.showPopUpInformation(this.notebook.MESSAGES.announcements.noteRestored)
                             break;
                         case "delete":
                             this.notebook.UIManager.note.deleteNotePermanently();
+                            DataManager.saveApplicationData(this.data);
                             this.notebook.UIManager.showPopUpInformation(this.notebook.MESSAGES.announcements.NoteDeleted);
                             break;
                     }
@@ -1125,7 +1131,10 @@ class Note {
     constructor(data) {
         this.data = data;
         this.btnSave = document.querySelector(".btn-save");
-        this.btnSave.addEventListener("click", this.saveNote);
+        this.btnSave.addEventListener("click", () => {
+            this.saveNote();
+            DataManager.saveApplicationData(this.data);
+        });
         this.isRestoring = false;
     }
     loadNote() {
@@ -1139,7 +1148,6 @@ class Note {
         this.note.title = this.noteTitleHTML.value;
         this.note.text = this.noteTextHTML.value
         this.note.lastEdited = this.upgradeDateOfNote();
-        DataManager.saveApplicationData(this.data);
     }
     moveNoteToBin = () => {
         const currentId = this.data.currentNoteId;
@@ -1147,14 +1155,12 @@ class Note {
         if (noteToRemove) {
             this.data.notes = this.data.notes.filter((note) => note.id !== currentId)
             this.data.trash.push(noteToRemove);
-            DataManager.saveApplicationData(this.data);
         }
 
     }
     deleteNotePermanently() {
         this.data.trash = this.data.trash.filter((note) => note.id !== this.data.currentNoteId);
         this.data.currentNoteId = -1;
-        DataManager.saveApplicationData(this.data);
     }
     restoreDeletedNote() {
         const noteToRestore = this.data.trash.find((note) => note.id === this.data.currentNoteId);
@@ -1162,7 +1168,6 @@ class Note {
             this.data.trash = this.data.trash.filter((note) => note !== noteToRestore);
             this.data.notes.push(noteToRestore);
             this.data.currentNoteId = -1
-            DataManager.saveApplicationData(this.data);
         }
     }
     upgradeDateOfNote() {
@@ -1200,8 +1205,6 @@ class Note {
             category: category
         }
         this.data.notes.push(note);
-        DataManager.saveApplicationData(this.data);
-        this.loadNote();
     }
 }
 let notebook = new Notebook();
