@@ -18,3 +18,8 @@
 ![Notatnik3](https://github.com/user-attachments/assets/24ac5f3e-05a5-4978-bfc0-f8a4415db842)
 ![Notatnik4](https://github.com/user-attachments/assets/1ffd660a-0e43-431e-8c55-f5f167b009fc)
 
+## Na mniejszych ekranach
+![Notatnik5](https://github.com/user-attachments/assets/ae20b5b6-390f-4ca2-a41b-e56ced579be5)
+![Notatnik6](https://github.com/user-attachments/assets/b1e09788-3748-4880-8e41-aaad6ca74b96)
+
+
