@@ -14,18 +14,17 @@
 -notatnik jest responsywny: dostosowuje się do ekranów komputera jak i urządzenia mobilnego<br>
 
 # Uruchomienie projektu
-1. Sklonuj repozytorium
-Przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozytorium i wpisz:<br>
+1. Sklonuj repozytorium i przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozytorium i wpisz:<br>
 <code>git clone https://github.com/Ksanen/Notebook.git</code>
-2. Wejdź do folderu projektu poprzez: <br>
+3. Wejdź do folderu projektu poprzez: <br>
   <code>cd Notebook</code> <br>
    i wpisz <br>
    <code>npm install</code> <br>
    żeby pobrać niezbędne paczki
-3. Uruchom projekt poprzez <br>
+4. Uruchom projekt poprzez <br>
    <code>npm start server.js</code>
 
-4. Wpisz w przeglądarce: <br>
+5. Wpisz w przeglądarce: <br>
 localhost:3000
 
 # Ważne uwagi
