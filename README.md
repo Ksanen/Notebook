@@ -10,8 +10,27 @@
 -trwałe usuwanie notatek i ich przywracanie<br>
 -tryb ciemny/jasny<br>
 -exportowanie/importowanie danych dotyczących notatek<br>
--zmiana języka notatnika(Jeśli uruchomione poprzez serwer)<br>
+-zmiana języka notatnika<br>
 -notatnik jest responsywny: dostosowuje się do ekranów komputera jak i urządzenia mobilnego<br>
+
+# Uruchomienie projektu
+1. Sklonuj repozytorium
+Przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozytorium i wpisz:<br>
+<code>git clone https://github.com/Ksanen/Notebook.git</code>
+2. Wejdź do folderu projektu poprzez: <br>
+  <code>cd Notebook</code> <br>
+   i wpisz <br>
+   <code>npm install</code> <br>
+   żeby pobrać niezbędne paczki
+3. Uruchom projekt poprzez <br>
+   <code>npm start server.js</code>
+
+4. Wpisz w przeglądarce: <br>
+localhost:3000
+
+# Ważne uwagi
+Z racji tego, że projekt opiera się na przechowywaniu danych w localstorage,<br>
+nie zalecane jest trzymanie tu wrażliwych danych
 # Wygląd
 ![notatnik](https://github.com/user-attachments/assets/123c2d6b-a73f-42d1-9931-68eb16838f58)
 ![Notatnik2](https://github.com/user-attachments/assets/30b30bae-3fa1-4ce4-b58c-3ce3c360d788)
