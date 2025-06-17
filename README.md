@@ -2,6 +2,7 @@
 -javascript<br>
 -css<br>
 -html<br>
+-express.js<br>
 
 ## Funkcje
 -tworzenie, odczytywanie, kategoryzowanie notatek<br>
