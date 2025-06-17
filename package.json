@@ -1,7 +1,7 @@
 {
   "name": "notebook",
   "version": "1.0.0",
-  "main": "defaultNotes.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js"
   },

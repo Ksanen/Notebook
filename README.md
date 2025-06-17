@@ -24,7 +24,7 @@ przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozyt
    <code>npm install</code> <br>
    żeby pobrać niezbędne paczki
 4. Uruchom projekt poprzez <br>
-   <code>npm start server.js</code>
+   <code>npm start</code>
 
 5. Wpisz w przeglądarce: <br>
 localhost:3000
