@@ -15,7 +15,8 @@
 -notatnik jest responsywny: dostosowuje się do ekranów komputera jak i urządzenia mobilnego<br>
 
 # Uruchomienie projektu
-1. Sklonuj repozytorium i przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozytorium i wpisz:<br>
+1. Sklonuj repozytorium <br>
+przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozytorium i wpisz:<br>
 <code>git clone https://github.com/Ksanen/Notebook.git</code>
 3. Wejdź do folderu projektu poprzez: <br>
   <code>cd Notebook</code> <br>
