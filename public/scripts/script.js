@@ -210,7 +210,7 @@ class UIManager {
         }
     }
     returnAddNoteBtnToItPreviousPosition() {
-        if (this.animation.addBtnAnimation.returned === false && window.innerWidth >= 600) {
+        if (this.animation.addBtnAnimation.returned === false) {
             const addNoteSearch = document.querySelector(".add-note--search");
             const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
             const rectSearch = addNoteSearch.getBoundingClientRect();
