@@ -15,6 +15,7 @@
 -notatnik jest responsywny: dostosowuje się do ekranów komputera jak i urządzenia mobilnego<br>
 
 # Uruchomienie projektu
+Upewnij się, że masz zaintalowanego node.js
 1. Sklonuj repozytorium <br>
 przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozytorium i wpisz:<br>
 <code>git clone https://github.com/Ksanen/Notebook.git</code>
@@ -28,7 +29,9 @@ przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozyt
 
 5. Wpisz w przeglądarce: <br>
 localhost:3000
-
+# License
+Ten projekt jest dostępny na warunkach licencji MIT<br>
+[LICENSE](LICENSE)
 # Ważne uwagi
 Z racji tego, że projekt opiera się na przechowywaniu danych w localstorage,<br>
 nie zalecane jest trzymanie tu wrażliwych danych
