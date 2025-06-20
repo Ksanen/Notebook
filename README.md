@@ -36,13 +36,11 @@ Ten projekt jest dostępny na warunkach licencji MIT<br>
 Z racji tego, że projekt opiera się na przechowywaniu danych w localstorage,<br>
 nie zalecane jest trzymanie tu wrażliwych danych
 # Wygląd
-![notatnik](https://github.com/user-attachments/assets/123c2d6b-a73f-42d1-9931-68eb16838f58)
-![Notatnik2](https://github.com/user-attachments/assets/30b30bae-3fa1-4ce4-b58c-3ce3c360d788)
-![Notatnik3](https://github.com/user-attachments/assets/24ac5f3e-05a5-4978-bfc0-f8a4415db842)
-![Notatnik4](https://github.com/user-attachments/assets/1ffd660a-0e43-431e-8c55-f5f167b009fc)
-
+![Notatnik1](https://github.com/user-attachments/assets/f9d2b876-98b3-45dd-93bc-a196f262024c)
+![Notatnik2](https://github.com/user-attachments/assets/f5800d47-f780-4aa3-bac4-8e383a5eed09)
+![Notatnik3](https://github.com/user-attachments/assets/6bc283ab-3f26-48c3-a1b5-3b2596d2c115)
+![Notatnik4](https://github.com/user-attachments/assets/8c16310d-9920-470d-a306-4c11165f7bc2)
 ## Na mniejszych ekranach
-![Notatnik5](https://github.com/user-attachments/assets/ae20b5b6-390f-4ca2-a41b-e56ced579be5)
-![Notatnik6](https://github.com/user-attachments/assets/b1e09788-3748-4880-8e41-aaad6ca74b96)
-
+![Notatnik5](https://github.com/user-attachments/assets/44954ad8-3289-4a03-9c64-40a6c0d6bb26)
+![Notatnik6](https://github.com/user-attachments/assets/ae3da1e8-c9aa-486f-99a5-9a20b98d42c7)
 
