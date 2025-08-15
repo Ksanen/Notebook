@@ -1,10 +1,10 @@
 # Spi treści
-[1.Technologia](##Technologia) <br>
-[2.Funkcje](##Funkcje)<br>
-[3.Uruchomienie projektu](##Uruchomienie-projektu)<br>
-[4.License](##License)<br>
-[5.Ważne uwagi](##Ważne-uwagi)<br>
-[6.Wygląd](##Wygląd)<br>
+[1.Technologia](#Technologia) <br>
+[2.Funkcje](#Funkcje)<br>
+[3.Uruchomienie projektu](#Uruchomienie-projektu)<br>
+[4.License](#License)<br>
+[5.Ważne uwagi](#Ważne-uwagi)<br>
+[6.Wygląd](#Wygląd)<br>
 ## Technologia
 -javascript<br>
 -css<br>
