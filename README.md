@@ -1,8 +1,14 @@
-# Technologia
+# Spi treści
+[1.Technologia](##Technologia) <br>
+[2.Funkcje](##Funkcje)<br>
+[3.Uruchomienie projektu](##Uruchomienie-projektu)<br>
+[4.License](##License)<br>
+[5.Ważne uwagi](##Ważne-uwagi)<br>
+[6.Wygląd](##Wygląd)<br>
+## Technologia
 -javascript<br>
 -css<br>
 -html<br>
--express.js<br>
 
 ## Funkcje
 -tworzenie, odczytywanie, kategoryzowanie notatek<br>
@@ -14,28 +20,17 @@
 -zmiana języka notatnika<br>
 -notatnik jest responsywny: dostosowuje się do ekranów komputera jak i urządzenia mobilnego<br>
 
-# Uruchomienie projektu
-Upewnij się, że masz zaintalowanego node.js
+## Uruchomienie projektu
 1. Sklonuj repozytorium <br>
-przeniesieś się w konsoli do miejsca w którym chcesz mieć sklonowane repozytorium i wpisz:<br>
 <code>git clone https://github.com/Ksanen/Notebook.git</code>
-3. Wejdź do folderu projektu poprzez: <br>
-  <code>cd Notebook</code> <br>
-   i wpisz <br>
-   <code>npm install</code> <br>
-   żeby pobrać niezbędne paczki
-4. Uruchom projekt poprzez <br>
-   <code>npm start</code>
-
-5. Wpisz w przeglądarce: <br>
-localhost:3000
+2. Otwórz plik index.html
 # License
 Ten projekt jest dostępny na warunkach licencji MIT<br>
 [LICENSE](LICENSE)
 # Ważne uwagi
 Z racji tego, że projekt opiera się na przechowywaniu danych w localstorage,<br>
 nie zalecane jest trzymanie tu wrażliwych danych
-# Wygląd
+## Wygląd
 ![Notatnik1](https://github.com/user-attachments/assets/f9d2b876-98b3-45dd-93bc-a196f262024c)
 ![Notatnik2](https://github.com/user-attachments/assets/f5800d47-f780-4aa3-bac4-8e383a5eed09)
 ![Notatnik3](https://github.com/user-attachments/assets/6bc283ab-3f26-48c3-a1b5-3b2596d2c115)
