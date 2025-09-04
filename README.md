@@ -28,8 +28,8 @@
 Ten projekt jest dostępny na warunkach licencji MIT<br>
 [LICENSE](LICENSE)
 # Ważne uwagi
-Z racji tego, że projekt opiera się na przechowywaniu danych w localstorage,<br>
-nie zalecane jest trzymanie tu wrażliwych danych
+Z racji tego, że projekt opiera się na przechowywaniu danych w localstorage i ma charakter prezentacyjny,<br>
+nie zalecane jest trzymanie tu wrażliwych danych.
 ## Wygląd
 ![Notatnik1](https://github.com/user-attachments/assets/f9d2b876-98b3-45dd-93bc-a196f262024c)
 ![Notatnik2](https://github.com/user-attachments/assets/f5800d47-f780-4aa3-bac4-8e383a5eed09)
